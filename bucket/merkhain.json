@@ -1,0 +1,22 @@
+{
+    "version": "0.0.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/merkhain/releases/releases/download/v0.0.2/merkhain_0.0.2_windows_amd64.zip",
+            "bin": [
+                "merkhain.exe"
+            ],
+            "hash": "dbd7691d85d5ed33ea6c4a73658556844c9f875a6681e2b17f4f350187fbe603"
+        },
+        "arm64": {
+            "url": "https://github.com/merkhain/releases/releases/download/v0.0.2/merkhain_0.0.2_windows_arm64.zip",
+            "bin": [
+                "merkhain.exe"
+            ],
+            "hash": "1703fd67710be432efa9d86dbf6d3208a28f6a553bf01844fc7e4602dcf783cf"
+        }
+    },
+    "homepage": "https://merkhain.com",
+    "license": "Proprietary",
+    "description": "Durable, private, collaborative memory for coding agents."
+}
