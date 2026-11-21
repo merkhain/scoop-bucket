@@ -1,19 +1,19 @@
 {
-    "version": "0.0.3",
+    "version": "0.0.4",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/merkhain/releases/releases/download/v0.0.3/merkhain_0.0.3_windows_amd64.zip",
+            "url": "https://github.com/merkhain/releases/releases/download/v0.0.4/merkhain_0.0.4_windows_amd64.zip",
             "bin": [
                 "merkhain.exe"
             ],
-            "hash": "6bdefe56be261aeffe111a9556699ba5ccfdef3c9da74b3c3d01f7523da689c3"
+            "hash": "01e93afcd508690c4c0705ce0e7e7ff2c1f020c51133b4f8260dcc51d5e1a317"
         },
         "arm64": {
-            "url": "https://github.com/merkhain/releases/releases/download/v0.0.3/merkhain_0.0.3_windows_arm64.zip",
+            "url": "https://github.com/merkhain/releases/releases/download/v0.0.4/merkhain_0.0.4_windows_arm64.zip",
             "bin": [
                 "merkhain.exe"
             ],
-            "hash": "815d1d34140106f107d428541a6b59c880eda620577bf146df1c6453af625d2a"
+            "hash": "d0539cd20630d1122f0a4d14ff428181e80092e2edfefd6a2a1124243546df35"
         }
     },
     "homepage": "https://merkhain.com",
