@@ -1,22 +1,29 @@
 {
-    "version": "0.0.7",
+    "version": "0.0.8",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/merkhain/releases/releases/download/v0.0.7/merkhain_0.0.7_windows_amd64.zip",
+            "url": "https://github.com/merkhain/releases/releases/download/v0.0.8/merkhain_0.0.8_windows_amd64.zip",
             "bin": [
                 "merkhain.exe"
             ],
-            "hash": "8251d58cf39db4c39136a8550c72181ba779883121d9c1eecee67b68583ca242"
+            "hash": "d1974c65375f084af840c0d97e765315cc7c240107d0f0b289721a72b825c491"
         },
         "arm64": {
-            "url": "https://github.com/merkhain/releases/releases/download/v0.0.7/merkhain_0.0.7_windows_arm64.zip",
+            "url": "https://github.com/merkhain/releases/releases/download/v0.0.8/merkhain_0.0.8_windows_arm64.zip",
             "bin": [
                 "merkhain.exe"
             ],
-            "hash": "738b3145a4cefd2866aba372dcb33b9d92eecbaafa6f301fc82403eda7a3cdda"
+            "hash": "3740b29eec9fe08947468ccff1f16c4a5e862ea4618f3773a4d7e77dd94aea40"
         }
     },
     "homepage": "https://merkhain.com",
     "license": "Proprietary",
-    "description": "Durable, private, collaborative memory for coding agents."
+    "description": "Durable, private, collaborative memory for coding agents.",
+    "post_install": [
+        "if (-not $global -and -not $old_version) {",
+        "    \u0026 \"$dir\\merkhain.exe\" setup service",
+        "    if ($LASTEXITCODE -ne 0) { Write-Warning 'Run merkhain setup to start the service.' }",
+        "    Write-Host 'Open setup with: merkhain setup'",
+        "}"
+    ]
 }
