@@ -1,6 +1,6 @@
 # Merkhain scoop-bucket
 
-Official Scoop bucket for the Merkhain early beta on Windows.
+Official Scoop bucket for the Merkhain client on Windows.
 
 ```powershell
 scoop bucket add merkhain https://github.com/merkhain/scoop-bucket
